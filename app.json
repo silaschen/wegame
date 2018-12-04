@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/home/bingo"
+  ],
+  "window": {
+    "backgroundColor": "#ddd",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#129fe7",
+    "navigationBarTitleText": "minigame",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#777",
+    "selectedColor": "#129fe7",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "服务",
+        "iconPath": "res/icon1_1.png",
+        "selectedIconPath": "res/icon1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "res/icon2_1.png",
+        "selectedIconPath": "res/icon2.png"
+      }
+    ]
+  }
+}

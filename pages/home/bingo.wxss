@@ -1,0 +1,9 @@
+page{background: #009ffe;color: #fff;}
+.bingo{color: #fff;padding-top: 15%}
+.bingo .logo{width: 43%;margin: 35px auto;display: block}
+.service{text-align: center;font-size: 27rpx;margin-bottom: 15px;}
+.slogan{text-align: center;font-size: 37rpx;margin-bottom: 35px;}
+.profile{width: 45%;margin: auto;position: fixed;bottom: 10%;left: 0;right: 0}
+.profile .author{width: 40px;height: 40px;border-radius: 50%;border:1rpx solid #fff;display: block;float: left;}
+.profile view{font-size: 27rpx;line-height: 22px;text-indent: 10px;}
+.addcontact{width: 50%;}

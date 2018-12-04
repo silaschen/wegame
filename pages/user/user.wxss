@@ -1,0 +1,88 @@
+/* pages/section/user.wxss */
+@import "../../res/icon.wxss";
+page{
+  background: #f5f5f5;
+  color:#333;
+}
+/*头部信息  */
+#head {
+  display: flex;
+  display: -webkit-flex;
+  background: #fff;
+  padding:30rpx;
+}
+#head .headimg image{
+  width:140rpx;
+  height:140rpx;
+  display: block;
+  border-radius: 10rpx;
+}
+#head .cont{
+  width:calc(100% - 120rpx);
+  margin-left:20rpx;
+  margin-top:20rpx;
+}
+#head .cont .name{
+  font-size:32rpx;
+  font-weight: 600;
+}
+#head .cont .kefu {
+  font-size:28rpx;
+  padding:0 10rpx;
+  border-radius:10rpx;
+}
+#head .cont .kefu text{
+  font-size:28rpx;
+}
+#head .cont .info{
+  margin-top:10rpx;
+  font-size:28rpx;
+  color:#777;
+}
+/*  主体信息*/
+#section{
+  margin-top:10rpx;
+  background: #fff;
+  padding:0 30rpx;
+}
+#section .list{
+  line-height: 100rpx;
+}
+
+/*图标  */
+#section .list .pull-left image{
+  width:50rpx;
+  height:50rpx;
+  margin:0 30rpx 0 20rpx;
+  vertical-align: middle;
+  position: relative;
+  top:-4rpx;
+}
+#section .list .pull-left text{
+  font-weight:400;
+  font-size:32rpx;
+}
+/*右箭头  */
+#section .list .pull-right i{
+  line-height: 0;
+  color:#bbb;
+  font-size:40rpx;
+  position: relative;
+  top:8rpx;
+}
+/*数字样式  */
+#section .list .pull-right text{
+  display: inline-block;
+  width:40rpx;
+  line-height:40rpx;
+  text-align: center;
+  border-radius:50%;
+  color:#fff;
+  background:#129FE7;
+  font-size:24rpx;
+  position: relative;
+  top:-2rpx;
+}
+
+
+

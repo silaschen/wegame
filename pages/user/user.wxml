@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="head" id="head">
+    <view class="headimg">
+      <image src="{{headimg}}"></image>
+    </view>
+    <view class="cont">
+      <view class="clear">
+        <text class="name pull-left">{{wxname}}</text>
+        <button class="kefu pull-right" type="primary" size="mini" open-type="contact">
+          <text class="iconfont icon-kefu">  客服</text>
+        </button>
+      </view>
+      <view class="info">{{area}}</view>
+    </view>
+  </view>
+  <view class="section" id="section">
+ 
+    <view class="tinyline"></view>
+    <navigator url="../set/index" class="list clear">
+      <view class="pull-left">
+        <image src="../../res/10.png"></image>
+        <text>资料设置</text>
+      </view>
+      <view class="pull-right">
+        
+        <i class="iconfont icon-you"></i>
+      </view>
+    </navigator>
+    <view class="tinyline"></view>
+  </view>
+  
+  <include src="../footer.wxml" />
+</view>

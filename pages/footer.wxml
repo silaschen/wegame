@@ -1,0 +1,3 @@
+<view class="footer hl" bindtap="ShowCode">mini siwei</view>
+<navigator url="../home/bingo" class='footer bingo'><view>©hello world</view><view>mini game </view>
+</navigator>
