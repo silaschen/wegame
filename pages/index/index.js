@@ -8,6 +8,7 @@ Page({
   data: {
     banner: [],
     url: App.data["API_URL"],
+    rundata:[],
     ShowCode:false
   }
   ,
@@ -25,7 +26,7 @@ Page({
   GetBanner:function(){
     var that = this;
     wx.showLoading({
-      title: '加载中',
+      title: 'loading...',
     })
     wx.request({
       url: App.data['API_URL']+'/api/mini/slide',
@@ -52,12 +53,35 @@ Page({
    */
   onLoad: function (options) {   
   },
+  getRundata:function(){
 
+    wx.getWeRunData({
+      success(res) {
+        const encryptedData = res.encryptedData;
+        const iv = encodeURIComponent(res.iv);
+        wx.request({
+          url: 'https://www.dollsay.com/api/mini/deal?sessionkey='+wx.getStorageSync('sessionkey'),
+          method:'post',
+          header: {
+            'content-type': 'application/json'
+          },
+          data:{'run':encryptedData,'iv':iv},
+          success:function(res){
+
+
+
+
+          }
+        })
+      }
+    })
+
+
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-   
    this.GetBanner();
   },
 
@@ -66,6 +90,7 @@ Page({
    */
   onShow: function () {
     App.IsLogin();
+    this.getRundata();
   },
 
   /**

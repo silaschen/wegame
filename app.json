@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/user/user",
-    "pages/home/bingo"
+    "pages/home/bingo",
+    "pages/set/index"
   ],
   "window": {
     "backgroundColor": "#ddd",

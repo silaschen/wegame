@@ -1,4 +1,5 @@
 <view class="page">
+
   <!--轮播图  -->
   <view class="banner">
     <swiper indicator-dots="true" autoplay="true" interval="3000" duration="600" indicator-active-color="rgba(18,59,231,0.8)">
@@ -9,45 +10,13 @@
       </block>
     </swiper>
   </view>
-  <!--服务项目分类  -->
-  <view id="service" class="text-center">
-    <navigator class="list" url="../item1/index"  hover-class="navigator-hover">
-      <image src="../../res/2.png"></image>
-      <text>love</text>
-    </navigator>
-    <navigator class="list" url="../item2/index" hover-class="navigator-hover">
-      <image src="../../res/1.png"></image>
-      <text>you</text>
-    </navigator>
-    <navigator class="list right" url="../item3/index" hover-class="navigator-hover">
-      <image src="../../res/3.png"></image>
-      <text>and</text>
-    </navigator>
-   <navigator class="list" url="../item4/index" hover-class="navigator-hover">
-      <image src="../../res/4.png"></image>
-      <text>travel</text>
-    </navigator>
-    <navigator class="list" url="../item5/index" hover-class="navigator-hover">
-      <image src="../../res/5.png"></image>
-      <text>say</text>
-    </navigator>
-    <navigator class="list right" url="../item6/index"  hover-class="navigator-hover">
-      <image src="../../res/6.png"></image>
-      <text>you</text>
-    </navigator>
-    <navigator class="list bottom" url="../item7/index" hover-class="navigator-hover">
-      <image src="../../res/7.png"></image>
-      <text>love</text>
-    </navigator>
-    <button class="list bottom btn" url="../item7/index" hover-class="navigator-hover" open-type="contact">
-      <image src="../../res/8.png"></image>
-      <text>me</text>
-    </button>
-    <view class="list bottom right callme" hover-class="navigator-hover" bindtap="CallMe">
-      <image src="../../res/9.png"></image>
-      <text>contact us</text>
-    </view>
-  </view>
+
+
+
+
+
+
+  
   <include wx:if="{{ShowCode}}" src="../modal.wxml"/>
   <include src="../footer.wxml" />
 </view>

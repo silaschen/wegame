@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.5.4",
 	"appid": "wx8482a902f90eb22d",
-	"projectname": "minaGame",
+	"projectname": "wegame",
 	"condition": {
 		"search": {
 			"current": -1,
